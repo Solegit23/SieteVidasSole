@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/ingresar_producto.css" />
+
+    <link rel="stylesheet" href="../css/header.css" />
+    <title>Registrar Productos • Seven Lives</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="deslizableMenu">
+        <nav class="menu">
+          <ul>
+            <div class="div-logo">
+              <a href="../index.html">
+                <img
+                  class="logo"
+                  src="../img/nuevo-seven-lives.png"
+                  alt="SevenLives"
+                />
+              </a>
+            </div>
+            <div class="div-lista">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="/templates/bienestar.html">Bienestar</a></li>
+              <li><a href="/templates/historia.html">Historia</a></li>
+              <li><a href="/templates/contacto.html">Contacto</a></li>
+            </div>
+          </ul>
+        </nav>
+        <!-- <button class="no-border" id="hideMenuButton">
+                    <img src="../img/huella-animacion - copia.png" alt="ocultar-menu">
+                </button> -->
+      </div>
+      <button class="no-border" id="showMenuButton" style="display: none">
+        <img src="../img/huella-animacion.png" alt="desplegar-menu" />
+      </button>
+    </header>
+
+    <main>
+      <!-- <div class="space-top">
+            <img class="gato-curioso" src="../img/curiosity-cat2.png" alt="curiosity-cat">
+        </div> -->
+      <div class="div-listaprod">
+        <ul>
+          <li>
+            <a class="a1" href="/templates/tabla_productos.html">Tabla</a>
+          </li>
+          <li>
+            <a class="a1" href="/templates/ingresar_producto.html"
+              >Registrar producto</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <section>
+        <div class="container-form">
+          <form class="form" action="">
+            <div class="entrada">
+              <label class="label" for="nombre">Nombre:</label>
+              <input class="entrada" type="text" name="nombre" id="nombre" />
+            </div>
+
+            <div class="entrada">
+              <label class="label" for="precio">Precio:</label>
+              <input class="entrada" type="number" name="precio" id="precio" />
+            </div>
+
+            <div class="entrada">
+              <label class="label" for="stock">Stock:</label>
+              <input class="entrada" type="number" name="stock" id="stock" />
+            </div>
+
+            <div class="entrada">
+              <label class="label" for="imagen">Imagen:</label>
+              <input class="entrada" type="text" name="imagen" id="imagen" />
+            </div>
+
+            <div class="entrada">
+              <button
+                class="entrada"
+                class="modificar"
+                type="button"
+                onclick="guardar()"
+              >
+                Guardar
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="../js/ingresar_producto.js"></script>
+    <script src="../js/header.js"></script>
+  </body>
+</html>

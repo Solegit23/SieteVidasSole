@@ -1,0 +1,233 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 0;
+    width: 100%;
+    height: 28.99vw;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/footer/nuevo-footer.jpg);
+    background-repeat: no-repeat;
+}
+
+.fondo-opaco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70vw;
+    height: 28vw;
+    border-radius: 6vw;
+    background-color: rgba(1, 1, 1, 0.7);
+    border: outset .1vw;
+    box-shadow: .5vw .5vw .5vw .5vw rgb(2, 2, 2);
+
+}
+
+.curiosity-footer img{
+    height: 9vw;
+    position: relative;
+    bottom: 2.3vw;
+    right: 14vw;
+}
+
+.catfamily {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 1vh;
+    height: 10vw;
+    margin: 0;
+    padding-bottom: 2vw;
+}
+
+.redes-flex {
+    font-size: 1.5vw;
+    padding: 1vw;
+    color: rgba(163,240,231,0.8);
+    border: outset 0.1vw grey;
+    border-radius: 1vw 1vw 1vw 1vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: .1vh .1vw .1vh .1vw black;
+}
+
+
+.redes-sociales {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(25vw, 1fr));
+    justify-items: center;
+    gap: 1vh;
+    padding: 2vw;
+    border-radius: 1vw;
+    border: double .5vw;
+}
+
+.redes-sociales img{
+    height: 2vw;
+}
+
+.redes-sociales a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 1vw;
+    color: rgba(1,1,1,0.9);
+    font-size: 2vw;
+    border: outset 0.1vw rgb(0, 0, 0);
+    border-radius: 1vw 1vw 1vw 1vw;
+    background-color: rgba(245, 245, 245, 0.2);
+    box-shadow: .1vh .1vw .1vh .1vw rgb(39, 39, 39);
+    height: 4vw;
+    width: 17vw;
+}
+
+.redes-sociales a:hover {
+    background-color: rgba(8, 8, 8, 0.8);
+    transition: 1s;
+    transform: scale(1.1);
+    color: white;
+}
+
+
+@media (max-width: 1024px) {
+    footer {
+        align-items: center;
+        height: 60vw;
+    }
+
+    .fondo-opaco {
+        height: 50vw;
+    }
+
+    .curiosity-footer img{
+        height: 14vw;
+        position: relative;
+        bottom: 5.9vw;
+        right: 18vw;
+    }
+
+    .catfamily {
+        gap: 1.5vw;
+    }
+
+    .redes-flex h1 {
+        font-size: 4vw;
+    }
+
+    .redes-flex {
+        font-size: 5vw;
+        padding: 1.8vw;
+    }
+
+    .redes-sociales {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8vw;
+    }
+
+    .redes-sociales a {
+        height: 7vw;
+        width: 25vw;
+        font-size: 3vw;
+    }
+
+    .redes-sociales img{
+        height: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        height: 70vw;
+    }
+
+    .fondo-opaco {
+        height: 60vw;
+    }
+
+    .curiosity-footer img{
+        height: 15vw;
+        position: relative;
+        bottom: 10.4vw;
+        right: 20vw;
+    }
+
+
+    .catfamily {
+        gap: 1vw;
+    }
+
+    .redes-flex h1 {
+        font-size: 4.3vw;
+    }
+
+    .redes-flex {
+        padding: 3vw;
+        font-size: vw;
+    }
+
+    .redes-sociales {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2vw;
+    }
+
+    .redes-sociales a {
+        height: 4vw;
+        width: 40vw;
+        font-size: 3vw;
+        gap: 2vw;
+    }
+
+    .redes-sociales img {
+        height: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        height: 80vw;
+    }
+
+    .fondo-opaco {
+        height: 65vw;
+    }
+
+    .curiosity-footer img{
+        height: 16vw;
+        position: relative;
+        bottom: 13.2vw;
+        right: 21vw;
+    }
+
+
+    .catfamily {
+        gap: 0.8vw;
+    }
+
+    .redes-flex h1 {
+        font-size: 4.7vw;
+    }
+
+    .redes-flex {
+        font-size: 6vw;
+        padding: 1.6vw;
+    }
+
+    .redes-sociales {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.6vw;
+    }
+
+    .redes-sociales a {
+        height: 7vw;
+        width: 50vw;
+        font-size: 4.5vw;
+    }
+
+    .redes-sociales img {
+        height: 4vw;
+    }
+}
