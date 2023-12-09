@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    
+    <title>Contacto • Seven Lives</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="deslizableMenu">
+            <nav class="menu">
+                <ul>
+                    <div class="div-logo">
+
+                        <a href="../index.html">
+                            <img class="logo" src="../img/nuevo-seven-lives.png" alt="SevenLives">
+                        </a>
+
+                    </div>
+                    <div class="div-lista">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="/templates/bienestar.html">Bienestar</a></li>
+                        <li><a href="/templates/historia.html">Historia</a></li>
+                        <li><a class="active" href="/templates/contacto.html">Contacto</a></li>
+                       
+                    </div>
+
+                </ul>
+
+            </nav>
+            <button class="no-border" id="hideMenuButton">
+                <img src="../img/huella-animacion - copia.png" alt="ocultar-menu">
+            </button>
+
+        </div>
+        <button class="no-border" id="showMenuButton" style="display: none;">
+            <img src="../img/huella-animacion.png" alt="desplegar-menu">
+        </button>
+
+    </header>
+
+    <main>
+    
+
+        <div class="space-top">
+            <img class="gato-curioso" src="../img/curiosity-cat2.png" alt="curiosity-cat">
+        </div>
+     
+        <div class="formBody">
+           
+            <h1>
+                Formulario de Contacto
+            </h1>
+          
+            <form  action="https://formspree.io/f/xgejkgbj" method="POST" id="formulario" onsubmit="return validarFormulario()">
+                <label class="labelc" for="nombre">*Nombre:</label>
+                <input class="input" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre"><br>
+
+                <label class="labelc" for="apellido">*Apellido:</label>
+                <input class="input" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido"><br>
+
+                <label class="labelc" for="nacionalidad">*Nacionalidad:</label>
+                <input class="input" type="text" name="nacionalidad" id="nacionalidad"
+                    placeholder="Ingrese su nacionalidad"><br>
+
+                <label class="labelc" for="mascota">Nombre de su mascota (Opcional):</label>
+                <input class="input" type="text" name="mascota" id="mascota"
+                    placeholder="Ingrese el nombre de su mascota"><br>
+
+                <label class="labelc" for="correo">*Direccion de correo electronico:</label>
+                <input class="input" type="email" name="correo" id="correo"
+                    placeholder="Ingrese su correo electronico"><br>
+
+                <label class="labelc" for="comentario">*Consulta:</label>
+                <textarea class="input" name="comentario" id="comentario"
+                    placeholder="Ingrese aqui su consulta"></textarea><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <a class="nuevob" href="../templates/productos para gatos.html">Productos para Gatos</a>
+
+    </main>
+
+
+    <footer>
+        <div class="fondo-opaco">
+            <div class="curiosity-footer"><img src="../img/footer/curiositi-cat4.png" alt=""></div>
+            <div class="catfamily">
+                <div class="redes-flex">
+                    <h1>Nuestras redes de contacto</h1>
+                </div>
+                <div class="redes-sociales">
+                    <a href="https://www.instagram.com/" target="_blank">Instagram <img src="../img/redes/instagram.png"
+                            alt=""></a>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook <img
+                            src="../img/redes/facebook (1).png" alt=""></a>
+                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">Whatsapp <img
+                            src="../img/redes/whatsapp.png" alt=""></a>
+                    <a href="mailto:hernandez.flores.rr@gmail.com">E-mail<img src="../img/redes/email.png" alt=""></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/validacion.js"></script>
+</body>
+
+
+</html>

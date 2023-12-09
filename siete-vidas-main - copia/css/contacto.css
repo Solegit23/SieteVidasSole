@@ -1,0 +1,270 @@
+/* SECTIO SPACE INDEX */
+@font-face {
+    font-family: "titulos";
+    src: url(../fuentes/Merriweather-Black.ttf);
+  }
+  
+  @font-face {
+    font-family: "friendly";
+    src: url(../fuentes/Caveat-VariableFont_wght.ttf);
+  }
+  
+  @font-face {
+    font-family: "menu";
+    src: url(../fuentes/Merriweather-LightItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: "moolireg";
+    src: url(../fuentes/Mooli-Regular.ttf)
+  }
+  
+  @font-face{
+    font-family: "snig";
+    src: url(../fuentes/Sniglet-Regular.ttf)
+  }
+
+
+  body{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/FondoDePagina.jpg');
+    background-size: 30vw;
+    background-repeat: repeat;
+    opacity: 0.5;
+    z-index: -2;
+  }
+
+
+  /* div atras header */
+
+  .space-top {
+    position: relative;
+    height: 15vw;
+  }
+  
+  .space-top>.gato-curioso {
+    position: absolute;
+    top: 4.6vw;
+    height: 12vw;
+    z-index: 3;
+  }
+  
+  /* MEDIA QUERY SPACE TOP */
+  
+  @media (max-width: 1024px) {
+    .space-top {
+        height: 23.8vw;
+    }
+  
+    .space-top>.gato-curioso {
+        top: 10.9vw;
+        height: 15vw;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+    .space-top {
+        height: 31vw;
+    }
+  
+    .space-top>.gato-curioso {
+        top: 17.8vw;
+        height: 15vw;
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+    .space-top {
+        height: 53vw;
+    }
+  
+    .space-top>.gato-curioso {
+        top: 39.9vw;
+        height: 16vw;
+    }
+  
+  }
+/* -------------- */
+
+*{
+    margin: 0;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+
+.formBody>h1 {
+    text-align: center;
+    font-family: "friendly";
+    font-size: 80px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color: rgba(245, 245, 245, 0.993);
+    padding: 1vw;
+}
+
+.formBody{
+    display: block;
+    max-width: 750px;
+    background-color: rgb(253, 217, 183);
+    padding: 40px;
+    padding-top: 0px;
+    margin: auto;
+    border: 3px solid rgb(56, 22, 22);
+    color: rgba(245, 245, 245, 0.993);
+}
+
+.formf {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color:  rgb(253, 237, 241);
+    border: 1px solid rgb(51, 20, 20);
+    border-radius: 10px;
+
+}
+
+.labelc {
+    display:block;
+    padding: 10px;
+    padding-top: 15px;
+    padding-left: 8%;
+    color: rgb(51, 20, 20);
+    font-size: 17px;
+}
+
+.input{
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    color: rgb(46, 23, 23);
+    font-size: 15px;
+    border: 1px solid rgb(36, 13, 13);
+    border-radius: 3px;
+}
+
+.input:focus{
+    outline: none;
+    border-bottom: 3px solid rgb(36, 13, 13) ;
+}
+
+.input[type="submit"] {
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+    display:block ;
+    width: 30%;
+    background-color: rgb(36, 13, 13);
+    color: #ffffff;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input[type="submit"]:hover {
+    background-color: rgba(95, 66, 66, 0.993);
+
+}
+
+textarea{
+    width: 80%;
+    height: 120px;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+    border: 3px solid rgb(36, 13, 13) ;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .formBody{
+        width: 600px;
+        border: 2px solid rgb(56, 22, 22);
+    }
+
+    .formf{
+        width: 500px;
+    }
+
+    .formBody>h1{
+        -webkit-text-stroke-width: 1.4px;
+        font-size: 70px;
+    }
+    
+}
+
+/*@media screen and (max-width: 768px) {
+    
+    .formBody>h1{
+        -webkit-text-stroke-width: 1.3px;
+        font-size: 60px;
+    }
+    .formBody{
+        width: 500px;
+        border: 2px solid rgb(56, 22, 22);
+    }
+
+    form{
+        width: 430px;
+    }
+
+    .input{
+        width: 95%;
+    }
+
+    label{
+        padding-left: 0;
+        
+    }
+
+        
+}*/
+@media screen and (max-width: 768px) {
+    .formBody {
+        max-width: 87.5%; /* Limita el ancho máximo en pantallas más pequeñas */
+        padding: 20px; /* Ajusta el relleno */
+    }
+
+    /* Ajusta el ancho de los elementos internos si es necesario */
+    .input {
+        width: 90%; /* Aprovecha el ancho disponible */
+    }
+    .formf{
+        width: 70%;
+    }
+    
+    /* Otras ajustes para pantallas más pequeñas... */
+}
+
+
+.nuevob{
+    background-color:#e2a8d3;
+    margin-right: 0vh;
+    margin-top: 0vh;
+    margin-left: 74vw;
+    padding: 0.9vw 5vh; /* Relleno interno */
+    border:solid; /* Quita el borde */
+    border-radius: 10px; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 2vw; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}

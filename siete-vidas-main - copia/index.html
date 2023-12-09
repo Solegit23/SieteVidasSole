@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/apiVue.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <title>Inicio • Seven Lives</title>
+</head>
+
+<body>
+    <header>
+  
+        <div class="deslizableMenu">
+            <nav class="menu">
+                <ul>
+                    <div class="div-logo">
+
+                        <a href="index.html">
+                            <img class="logo" src="/img/nuevo-seven-lives.png" alt="SevenLives">
+                        </a>
+
+                    </div>
+                    
+                    <div class="div-lista">
+                        <li><a class="active" href="index.html">Inicio</a></li>
+                        <li><a href="templates/bienestar.html">Bienestar</a></li>
+                        <li><a href="templates/historia.html">Historia</a></li>
+                        <li><a href="templates/contacto.html">Contacto</a></li>
+                     
+                    </div>
+
+                </ul>
+
+            </nav>
+            <a class="nuevob" href="/templates/login.html">Iniciar sesión</a>
+            <button class="no-border" id="hideMenuButton">
+                <img src="/img/huella-animacion - copia.png" alt="ocultar-menu">
+            </button>
+         
+        </div>
+        <button class="no-border" id="showMenuButton" style="display: none;">
+            <img src="/img/huella-animacion.png" alt="desplegar menu">
+        </button>
+      
+
+    </header>
+
+    <main>
+        <div class="space-top">
+            <img class="gato-curioso" src="/img/curiosity-cat2.png" alt="curiosity-cat">
+        </div>
+
+        <section class="wp-block-cover">
+            <div class="opacidad">
+                <span aria-hidden="true"
+                    class="wp-block-cover__background has-secondary-background-color has-background-dim-70 has-background-dim"></span>
+                <div class="wp-block-cover__content">
+
+                    <h1><img id="huella-ico" src="img/pngtree-pink-cat-paw-paw-image_2244116-removebg-preview.png"
+                            alt="">¡Bienvenido/a a Seven Lives, amante de los felinos!</h1>img id="huella-ico"
+                            src="img/pngtree-pink-cat-paw-paw-image_2244116-removebg-preview.png" alt=""></h1>
+                    <h4>Desde las majestuosas pirámides de Egipto, donde los gatos eran venerados como dioses, hasta
+                        los cómodos sofás de nuestras casas, estos seres peludos han sido protagonistas de
+                        incontables capítulos en la historia de la humanidad. Aquí, en Seven Lives, nos sumergimos
+                        en el fascinante mundo de los gatos, explorando no sólo su rica historia, sino también
+                        aspectos cruciales para su bienestar y salud.</h4>
+                    <h4>Así que ya sea que seas un apasionado de la historia gatuna, un preocupado dueño buscando
+                        consejos de salud, o simplemente alguien curioso por aprender más sobre estos maravillosos
+                        animales, ¡estás en el lugar correcto! Únete a nosotros en esta aventura felina y descubre
+                        todo lo que hay que saber sobre nuestros compañeros de bigotes.</h4>
+
+                </div>
+            </div>
+        </section>
+        
+        <section class="s3">
+            <div class="section-div">
+                <img class="gato-curioso" src="/img/curiosity-cat.png" alt="curiosity-cat">
+                <h1>Antes de continuar, ¿te gustaría conocer algunos datos curiosos sobre los gatos? ¡Adelante!</h1>
+            </div>
+        </section>
+
+        <section class="section-cat" id="app">
+
+            <div class="opacidad-cat">
+                <section class="align-cat">
+                    <div class="catanimation">
+                        <span v-for="(gato, index) in gatos" :style="'--i:' + (index + 1)"> <img :src="gato.url"
+                                alt="Imagen de gato">
+                            <div class="info-text">
+                                <p class="padding-p">{{ gato.texto }}</p>
+                            </div>
+                        </span>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="s5">
+            <div class="section-div5">
+                    <h1>Adéntrate en el Mundo Felino: descubre su historia, el cuidado que necesitan y si tienes sugerencias, ¡no dudes en contactarnos!</h1>
+                <img class="gato-curioso5" src="/img/curiosity-cat3.png" alt="curiosity-cat">
+            </div>
+        </section>
+
+        <section class="section1">
+            <div class="fondo-card">
+                <div class="card-index">
+                    <div class="img-container">
+                        <img class="img-cat" src="img/historia.jpg" alt="Imagen de historia">
+                        <div class="overlay">
+                            <h6>Descubre cómo los gatos conquistaron el mundo, pasando de ser cazadores solitarios en
+                                las sabanas africanas a ser los reyes de Internet. Conoce las civilizaciones que los
+                                adoraron, los artistas que se inspiraron en ellos y las leyendas que giran en torno a
+                                estos misteriosos animales.</h6>
+                            <a href="/templates/historia.html">Ir a <strong>Historia</strong></a>
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="img-cat" src="/img/bienestar.jpg" alt="Imagen de bienestar">
+                        <div class="overlay">
+                            <h6>¿Sabías que el ronroneo de un gato tiene propiedades curativas? Del mismo modo, es
+                                esencial que conozcamos los cuidados que necesitan para mantenerse saludables y felices.
+                                Desde las vacunas esenciales hasta consejos para una buena higiene, cubrimos todo lo que
+                                necesitas saber para garantizar que tu gato viva una vida larga y plena.</h6>
+                            <a href="/templates/bienestar.html">Ir a <strong>Bienestar</strong></a>
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="img-cat" src="/img/contacto.jpg" alt="Imagen contacto">
+                        <div class="overlay">
+                            <h6>¿Tienes preguntas o comentarios? ¿Quieres compartir la historia de tu gato? ¡Nos
+                                encantaría escucharte! En nuestra sección de contacto, encontrarás cómo comunicarte con
+                                nosotros. Busques consejo, colaboración o solo compartir, tu aporte es esencial para
+                                Seven Lives. ¡Únete a nuestra comunidad gatuna!</h6>
+                            <a href="/templates/contacto.html">Ir a <strong>Contacto</strong></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <div class="fondo-opaco">
+            <div class="curiosity-footer"><img src="img/footer/curiositi-cat4.png" alt=""></div>
+            <div class="catfamily">
+                <div class="redes-flex">
+                    <h1>Nuestras redes de contacto</h1>
+                </div>
+                <div class="redes-sociales">
+                    <a href="https://www.instagram.com/" target="_blank">Instagram <img src="/img/redes/instagram.png"
+                            alt=""></a></li>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook <img src="/img/redes/facebook (1).png"
+                            alt=""></a></li>
+                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">Whatsapp <img
+                            src="/img/redes/whatsapp.png" alt=""></a></li>
+                    <a href="mailto:hernandez.flores.rr@gmail.com">E-mail<img src="/img/redes/email.png" alt=""></a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/header.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="/js/ApiVue.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+header {
+    margin: 0vw;
+    height: 20vh;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    transition: height 0.5s ease-out, background-color 0.1s ease-out;
+}
+
+
+/* LOGO */
+.div-logo {
+    padding: 0;
+}
+
+.logo {
+    width: 20vw;
+    height: auto;
+}
+
+
+.deslizableMenu .menu>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "menu";
+}
+
+
+.deslizableMenu {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 20vw;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+    /* Transición para el efecto deslizante */
+}
+
+
+.hidden {
+    height: 0 !important;
+    /* ¡Oculta el menú! */
+}
+
+.no-border {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    outline: none;
+    background-color:rgba(230,155,115,0.80);
+}
+
+.no-border>img{
+    height: 3vw;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.menu ul{
+    background-color: rgba(230,155,115,0.80);
+}
+ 
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1vw 3vw;
+    margin: 0.2vw;
+    text-decoration: none;
+    font-family: "menu";
+    font-size: 1.5vw;
+    border-radius: 1vw;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.menu .div-lista a:hover {
+    transition: 1s;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    box-shadow: rgb(49, 49, 49) .3vw .3vw .3vw .3vw;
+}
+
+.active {
+    background-color: rgba(18,144,114,0.7);
+}
+   
+/* PUNTOS DE RUPTURA */
+
+/* Estilos base... */
+
+/* Para grandes tablets y pantallas pequeñas de laptops */
+@media (max-width: 1024px) {
+    header {
+        height: 27vw;
+        position: absolute;
+    }
+
+    
+
+    .logo {
+        width: 29vw;
+    }
+
+    .deslizableMenu{
+        height: 27vw;
+    }
+
+    .deslizableMenu .menu>ul{
+        height: 24vw;
+    }
+
+    .div-lista {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(2vw,1fr));
+    }
+
+    li a {
+        font-size: 2.3vw;
+    }
+
+    .no-border>img {
+        height: 2vw;
+    }
+
+
+}
+
+/* Para tablets en modo retrato */
+@media (max-width: 768px) {
+    header {
+        height: 31vw;
+        position: absolute;
+    }
+
+    .menu .div-logo a .logo{
+        width: 32vw;
+    }
+
+    .deslizableMenu{
+        height: 36vw;
+    }
+
+    .deslizableMenu .menu>ul{
+        height: 31vw;
+    }
+
+    .div-lista {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(2vw,1fr));
+    }
+
+    li a {
+        font-size: 2.7vw;
+    }
+
+    .no-border>img {
+        height: 4vw;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 54vw;
+        position: absolute;
+    }
+
+    .menu .div-logo a .logo{
+        width: 42vw;
+    }
+
+    .div-logo {
+        display: flex;
+        justify-content: center;
+        width: 40vw;
+        height: auto;
+    }
+
+    .deslizableMenu .menu>ul{
+        height: 54vw;
+    }
+
+    .deslizableMenu{
+        height: 59vw;
+    }
+
+    .div-lista{
+        grid-template-columns: repeat(1, minmax(1vw,1fr));
+    }
+
+    li a {
+        font-size: 4vw;
+    }
+
+    .no-border>img {
+        height: 4vw;
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tabla_productos.css">
+   
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    
+    <title>Productos para Gatos • Seven Lives</title>
+
+
+</head>
+<body>
+
+    <header>
+        <div class="deslizableMenu">
+            <nav class="menu">
+                <ul>
+                    <div class="div-logo">
+
+                        <a href="../index.html">
+                            <img class="logo" src="../img/nuevo-seven-lives.png" alt="SevenLives">
+                        </a>
+
+                    </div>
+                    <div class="div-lista">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="/templates/bienestar.html">Bienestar</a></li>
+                        <li><a href="/templates/historia.html">Historia</a></li>
+                        <li><a href="/templates/contacto.html">Contacto</a></li>
+                     
+                    </div>
+
+                </ul>
+
+            </nav>
+            <!-- <button class="no-border" id="hideMenuButton">
+                 <img src="../img/huella-animacion - copia.png" alt="ocultar-menu"> 
+            </button> -->
+
+        </div>
+       
+        <button class="no-border" id="showMenuButton" style="display: none;">
+               <img src="../img/huella-animacion.png" alt="desplegar-menu">
+        </button>
+        <div class="div-listaprodp">
+            <ul>
+                
+                <li><a class=a1 href="/templates/contacto.html">Consultar</a></li>
+             
+            </ul>
+          
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="space-top">
+            <img class="gato-curioso" src="../img/curiosity-cat2.png" alt="curiosity-cat">
+        </div>
+
+        <section class="container">
+            <div id="app" >
+                <div id="app" >
+                       
+                    <section v-if="error">Lo sentimos se produjo un error</section>
+                    <section v-else>
+                        <section v-if="cargando">
+                            <p>Cargando .....</p>
+    
+                        </section>
+
+                    <section v-else>
+                        <h2 class="tabla-titulo">Tabla de Productos:</h2>
+                        
+                        <div >
+                            <table class="tabla">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Imagen</th>
+                                      
+                                </thead>
+                                <tbody>
+                                   
+                                    <tr v-for="producto in productos">
+                                        <td >{{producto.id}}</td>
+                                        <td>{{producto.nombre}}</td>
+                                        <td>{{producto.precio}}</td>
+                                      
+                                        <td>
+                                            <img :src="producto.imagen" alt="">
+                                        </td>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="fondo-opaco">
+            <div class="curiosity-footer"><img src="../img/footer/curiositi-cat4.png" alt=""></div>
+            <div class="catfamily">
+                <div class="redes-flex">
+                    <h1>Nuestras redes de contacto</h1>
+                </div>
+                <div class="redes-sociales">
+                    <a href="https://www.instagram.com/" target="_blank">Instagram <img src="../img/redes/instagram.png"
+                            alt=""></a>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook <img
+                            src="../img/redes/facebook (1).png" alt=""></a>
+                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">Whatsapp <img
+                            src="../img/redes/whatsapp.png" alt=""></a>
+                    <a href="mailto:hernandez.flores.rr@gmail.com">E-mail<img src="../img/redes/email.png" alt=""></a>
+
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="../js/tabla_productos.js"></script>
+
+    <script src="../js/header.js"></script>
+
+</body>
+</html>

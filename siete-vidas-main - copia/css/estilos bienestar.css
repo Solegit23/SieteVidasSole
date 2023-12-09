@@ -1,0 +1,717 @@
+@font-face {
+    font-family: "titulos";
+    src: url(../fuentes/Merriweather-Black.ttf);
+  }
+  
+  @font-face {
+    font-family: "friendly";
+    src: url(../fuentes/Caveat-VariableFont_wght.ttf);
+  }
+  
+  @font-face {
+    font-family: "menu";
+    src: url(../fuentes/Merriweather-LightItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: "moolireg";
+    src: url(../fuentes/Mooli-Regular.ttf)
+  }
+  
+  @font-face{
+    font-family: "snig";
+    src: url(../fuentes/Sniglet-Regular.ttf)
+  }
+
+/* ESPACIO DETRAS DEL HEADER */
+
+body{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/FondoDePagina.jpg');
+    background-size: 30vw;
+    background-repeat: repeat;
+    opacity: 0.5;
+    z-index: -2;
+  }
+
+
+  /* div atras header */
+
+  .space-top {
+    position: relative;
+    height: 15vw;
+  }
+  
+  .space-top>.gato-curioso {
+    position: absolute;
+    top: 4.6vw;
+    height: 12vw;
+    z-index: 3;
+  }
+  
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.ico {
+    max-width: 10vw;
+    max-height: 14vh;
+    display: inline-block;
+    width: 9vw;
+    height: auto;
+    padding-left: 8vw;
+    background-color: transparent;
+}
+
+.ico1 {
+    max-width: 8vw;
+    max-height: 10vh;
+    display: inline-block;
+    width: 4vw;
+    height: auto;
+    padding-left: 1.3vw;
+    padding-right: 0vw;
+    background-color: transparent;
+    padding-top: 0.5vw;
+    margin-right: 0vw;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0vw;
+    row-gap: 0vw;
+
+}
+
+.h1 {
+    color: rgba(242, 97, 63, 0.44);
+    font: bolder;
+    font-size: 5vw;
+    text-align: center;
+    font-family: "moolireg";
+    border-bottom-color: rgba(243, 202, 221, 0.63);
+    margin-bottom: 5%;
+    
+    
+}
+
+.img1 {
+    width: 30%;
+    display: block;
+    box-shadow: 0 0 100px rgba(242, 222, 120, 0.49);
+    background-color: transparent;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 3%;
+}
+
+.p {
+    flex: auto;
+    font-family: "moolireg";
+    font-size: 1.3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    box-sizing: border-box;
+    text-align: justify;
+    overflow: auto;
+    margin-bottom: 2%;
+   
+}
+
+.h2 {
+    color: rgba(199, 137, 123, 0.44);
+    font: bolder;
+    padding: 0.1vw;
+    margin-left: 11w;
+    padding-left: 1vw;
+    font-size: 4vw;
+    font-family: "moolireg";
+    display: inline-block;
+    text-align: center;
+
+}
+
+.secconte {
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 7px rgba(221, 120, 153, 0.8)solid;
+    padding: 0vw;
+
+}
+
+.img2 {
+    min-width: 18vw;
+    max-height: 22vh;
+      
+}
+
+.seccion2 {
+    display: flex;
+    box-sizing: inline block;
+    justify-content: justify;
+    flex-direction: row;
+    column-gap: 0.5vw;
+    justify-content: space-between;
+    min-height: 45vh;
+    min-width: 60vw;
+    margin: 0vw;
+    padding: 0vw;
+    margin-right: 0.1vw;
+    margin-left: 0.1vw;
+    padding-left: 0.1vw;
+    padding-right: 0.1vw;
+
+    margin-bottom: 0vh;
+    text-align: justify;
+    border-radius: 2px solid rgb(243, 16, 16);
+
+}
+
+.h5 {
+    color: rgba(199, 137, 123, 0.44);
+    font: bolder;
+    padding: 0vw;
+    margin-left: 0.1vw;
+    padding-left: 0.1vw;
+    margin-top: 0.1vw;
+    padding-right: 0.1vw;
+    font-size: 3.5vw;
+    font-family: "moolireg";
+    display: inline-block;
+    text-align: center;
+}
+
+.p5 {
+    flex: auto;
+    font-family: "moolireg";
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    box-sizing: border-box;
+    text-align: justify;
+    overflow: auto;
+    margin: 0.5vw;
+    padding: 0.4vw;
+    padding-right: 1.5vw;
+    padding-left: 1vw;
+}
+
+.seccion {
+    display: flex;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-top: 7px rgba(221, 120, 153, 0.8)solid;
+    padding: 0vw;
+    background-color: rgb(247, 240, 248);
+}
+
+.seccion1 {
+    display: flex;
+    box-sizing: inline block;
+    justify-content: column;
+    flex-direction: center;
+    border: 2px rgb(230, 189, 221) solid;
+    min-height: px;
+    margin: 0.5vw;
+    margin-bottom: 0.5vh;
+    text-align: justify;
+    font-family: "moolireg"
+
+}
+
+.mivideo {
+    width: 50vw;
+    max-width: 200vw;
+    margin: auto;
+    margin-right: 3vw;
+    border: rgb(73, 124, 107);
+    box-shadow: 0 0 500px rgba(170, 21, 83, 0.5);
+    margin-left: 1.5vw;
+
+}
+
+.li {
+    font-style: oblique;
+    color: rgba(107, 92, 43, 0.8);
+    padding: 1vw;
+    font-size: 1.2vw;
+}
+
+
+/*Grilla*/
+.grilla-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*crea 3 columnas igualmente espaciadas auto-fill permite que las columnas se ajusten automaticamente al tamaño del contenedor columnas adaptables*/
+    align-content: space-between;
+    gap: 2.9vw;
+    /*espacio enre las tarjetas*/
+    position: relative;
+    box-sizing: border-box;
+    padding: 0vw;
+    margin-right: 12vw;
+    margin-left: 12vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding-left: 1vw;
+    grid-row: auto;
+    row-gap: 1vw;
+    align-items: flex-end;
+
+}
+
+.card {
+    background-color: rgba(245, 244, 244, 0.8);
+    border: 1px solid rgba(230, 155, 115, 0.8);
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+    transition: transform 0.4s;
+    /*Transformacion*/
+    position: relative;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: translateX(3vw);
+    /*efecto de elevacion cuando el usuario pasa el mouse*/
+}
+
+.card-imagen {
+    height: auto;
+    padding: 0.1vw;
+    width: 30vw;
+    height: 22vh;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+}
+
+.card-contenido {
+    display: none;
+    /*inicialmente oculto*/
+    padding: 0.1vw;
+    padding-top: 0.2vh;
+    margin: 0.5vw;
+    position: static;
+    border-top: 2px rgba(19, 144, 114, 0.44) solid;
+    
+}
+
+.card:hover .card-contenido {
+    display: block;
+    /*mostrar el contenido cuando el usuario pasa el mouse*/
+    overflow: auto;
+    
+
+}
+
+.card-titulo {
+    color: rgba(19, 144, 114, 0.44);
+    padding-left: 0vw;
+    padding-top: 0vh;
+    padding-bottom: 0.1vh;
+    
+    font-style: bold;
+    font-family: "moolireg";
+    margin: 0vw;
+
+}
+
+.card-texto {
+    flex: auto;
+    font-family: "moolireg";
+    font-size:1vw;
+    padding: 5%;
+    box-sizing: border-box;
+    text-align: justify;
+    text-overflow: auto;
+    
+}
+
+.div2 {
+    border: 2px solid rgb(209, 161, 207);
+    border-top: 7px rgba(221, 120, 153, 0.8)solid;
+    box-shadow: 0 0 900px rgba(243, 202, 221, 0.63);
+    background-color: rgb(247, 240, 248);
+    display: inline-block;
+    justify-content: center;
+    min-width: 20vw;
+    min-height: 10vw;
+    margin: 1vw;
+    padding: 0.5vw;
+    margin-bottom: 1vh;
+    align-items: center;
+}
+
+h2:hover {
+    color: rgba(236, 26, 166, 0.377);
+}
+
+.tabla {
+    font-family: "moolireg";
+    display: table;
+    flex-direction: column;
+    font-size: 1.5vw;
+    margin: 1vw;
+    padding: 1vw;
+    font-style: italic;
+    margin-left:2vw;
+    text-align:center;
+   
+}
+
+.p1 {
+    font-family: "moolireg";
+    font-size: 1.2vw;
+    margin-right: 3vw;
+    text-align:left;
+    color: black;
+    overflow: auto;
+    margin-left: 0vw;
+    padding-left: 3.7vw;
+    margin-top: 0.1vw;
+    padding-right: 0.1vw;
+}
+
+
+.h4 {
+    color: rgba(46, 51, 40, 0.44);
+    font: bolder;
+    padding-left: 1vw;
+    font-size: 1.5vw;
+    font-family: "moolireg";
+    text-align:justify;
+    margin-left: 2.5vw;
+}
+
+.div2>.img3 {
+    width: 42vw;
+    display: inline-block;
+    height: 50vh;
+    box-shadow: 0 0 100px rgba(242, 222, 120, 0.49);
+    background-color: transparent;
+
+    margin-left: 6vw;
+
+}
+
+
+
+.pie {
+    font-style: italic;
+    font-size: 2vw;
+}
+.nuevob{
+    background-color:#e2a8d3;
+    margin-right: 0vh;
+    margin-left: 74vw;
+    padding: 0.9vw 5vh; /* Relleno interno */
+    border:solid; /* Quita el borde */
+    border-radius: 10px; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 2vw; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+
+
+
+/* -------------------   *******    -----------------------------------------------------------------------------------*/
+/*---------------------------1---------------------------------------------------------*/
+/* Puntos de cortes */
+  
+ @media (max-width: 1024px) {
+     /* MEDIA QUERY SPACE TOP */
+    .space-top {
+        height: 23.8vw;
+    }
+  
+    .space-top>.gato-curioso {
+        top: 10.9vw;
+        height: 15vw;
+    }
+    .seccion .seccion2 .div2 .seccion1 .secconte {
+
+        max-width: 100%;
+        min-height: auto;
+    }
+  
+  }
+
+
+@media (max-width: 767px) {
+    
+/* MEDIA QUERY SPACE TOP */
+  
+    .space-top {
+    height: 31vw;
+    }
+  
+    .space-top>.gato-curioso {
+        top: 17.8vw;
+        height: 15vw;
+    }
+    .h1{
+        font-size: 6vw;
+    }
+    .img1{
+    width:40vw;
+    }
+    .p {
+        font-size: 3vw;
+    }
+
+    .p5{
+        font-size: 2vw;
+    }
+    .p1 {
+        font-size: 1.8vw;
+    }
+
+    .p {
+        font-size: 3vw;
+    }
+
+    .h4{
+    font-size: 2vw;
+    text-align: center;
+    }   
+    .h5{
+        font-size: 6vw;
+        text-align: center;
+    }
+  .seccion2{
+  
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de flex a columna para apilar las tarjetas */
+    }
+    .seccion1{
+  
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de flex a columna para apilar las tarjetas */
+        align-items: center;
+    }
+ 
+    .grilla-cards {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de flex a columna para apilar las tarjetas */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Espaciado entre las tarjetas */
+        /* Otros estilos específicos para pantallas de celular */
+    }
+    .card-texto {
+        font-size: 3vw;
+       
+        min-width: 20vw;
+        max-width: 80vw;
+        height: auto;
+        padding: 5%;
+        
+    }
+    .h4{
+        font-size: 3vw;
+    }
+    .tabla{
+        width: 90vw;
+     
+    }
+    .li {
+        font-size: 3vw;
+        justify-content: center;
+    }
+
+    .div2>.img3 {
+        width: 80vw;
+ 
+
+    }
+    .nuevob{
+        width:50vw;
+        height: 5vh;
+        margin-left: 18vw;
+        font-size: 4.5vw;
+
+    }
+}
+
+      
+@media (max-width: 480px) {
+    /* MEDIA QUERY SPACE TOP */
+    .space-top {
+        height: 53vw;
+     }
+
+    .space-top>.gato-curioso {
+      top: 39.9vw;
+      height: 16vw;
+    }
+
+
+    .seccion .seccion2 .div2 .seccion1 {
+   
+        max-width: 30%;
+        min-height: auto;
+      
+    }
+
+   .p {
+        font-size: 4vw;
+    }
+
+    .p5{
+        font-size: 4vw;
+    }
+
+    .h1{
+    font-size: 10vw;
+    text-align: center;
+    }   
+    .h5{
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .nuevob{
+    width:50vw;
+    height: 5vh;
+    margin-left: 18vw;
+    font-size: 4.5vw;
+
+    }
+     .seccion{
+        display: flex;
+        flex-direction: column; /* Alinea los elementos en una columna */
+       
+     
+    
+        box-sizing: border-box; 
+        padding: 1vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw; /* Centra los elementos verticalmente */
+    
+       }
+    .seccion2 {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos en una columna */
+       align-items: center; /* Centra los elementos verticalmente */
+        box-sizing: border-box; 
+        padding: 1vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+       }
+       .seccion1{
+  
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de flex a columna para apilar las tarjetas */
+        align-items: center;
+    }
+
+    .mivideo {
+      width: 100%;
+   
+    }
+    .li {
+        font-size: 3vw;
+    }
+
+    .secconte {
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    .grilla-cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(15vw, 1fr));
+        min-width: 0.2vw;
+        min-height: auto;
+        max-height: auto;
+     
+    }
+
+    .card-contenido {
+        
+        max-width: auto;
+        max-height: auto;
+ 
+     
+    }
+
+    .card-texto {
+        font-size: 2.5vw;
+       
+        min-width: 20vw;
+        max-width: 80vw;
+        height: auto;
+        padding: 5%;
+        
+    }
+    .card-titulo {
+        font-size:5vw;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .img2 {
+        padding: 0vw;
+        width: 100%;
+        min-height: auto;
+        
+        align-items: center;
+        align-content: center;
+
+    }
+
+    .card-imagen {
+        padding: 0.1vw;
+        min-width: auto;
+        min-height: auto;
+        max-width: 10%;
+        max-height: 5%;
+        align-items: center;
+      
+    }
+
+  
+    .img1{
+        width: 100%;
+    }
+    li{
+        font-size: 3vw;
+    }
+    
+    
+
+.div2> .img3 {
+    width: 90vw;
+    display: inline-block;
+    height: auto;
+    align-items: center;
+    
+}
+}
+
